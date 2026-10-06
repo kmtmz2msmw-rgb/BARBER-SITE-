@@ -4,367 +4,383 @@
 
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>L'Atelier Barber | Barbier à Paris</title>
+<title>L'Atelier Barber | Barbier à Paris</title>
 
-    <style>
+<style>
 
-        * {
+* {
 
-            margin: 0;
+    margin: 0;
 
-            padding: 0;
+    padding: 0;
 
-            box-sizing: border-box;
+    box-sizing: border-box;
 
-        }
+}
 
-        html {
+html {
 
-            scroll-behavior: smooth;
+    scroll-behavior: smooth;
 
-        }
+}
 
-        body {
+body {
 
-            font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
 
-            background: #f8f8f8;
+    color: #222;
 
-            color: #222;
+    background: #f5f5f5;
 
-        }
+    line-height: 1.6;
 
-        header {
+}
 
-            position: sticky;
+header {
 
-            top: 0;
+    background: white;
 
-            z-index: 10;
+    padding: 20px 8%;
 
-            background: white;
+    display: flex;
 
-            padding: 20px 8%;
+    justify-content: space-between;
 
-            display: flex;
+    align-items: center;
 
-            justify-content: space-between;
+    position: sticky;
 
-            align-items: center;
+    top: 0;
 
-            border-bottom: 1px solid #eee;
+    z-index: 100;
 
-        }
+    border-bottom: 1px solid #eee;
 
-        .logo {
+}
 
-            font-size: 24px;
+.logo {
 
-            font-weight: bold;
+    font-size: 24px;
 
-        }
+    font-weight: bold;
 
-        nav a {
+}
 
-            color: #222;
+nav a {
 
-            text-decoration: none;
+    color: #222;
 
-            margin-left: 25px;
+    text-decoration: none;
 
-        }
+    margin-left: 25px;
 
-        nav a:hover {
+    font-weight: 500;
 
-            text-decoration: underline;
+}
 
-        }
+nav a:hover {
 
-        .hero {
+    color: #777;
 
-            min-height: 650px;
+}
 
-            display: flex;
+.hero {
 
-            align-items: center;
+    min-height: 650px;
 
-            justify-content: center;
+    display: flex;
 
-            text-align: center;
+    align-items: center;
 
-            padding: 40px 20px;
+    justify-content: center;
 
-            background:
+    text-align: center;
 
-                linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    color: white;
 
-                url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1600&q=80");
+    padding: 40px 20px;
 
-            background-size: cover;
+    background:
 
-            background-position: center;
+        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
 
-            color: white;
+        url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1600&q=80");
 
-        }
+    background-size: cover;
 
-        .hero-content {
+    background-position: center;
 
-            max-width: 700px;
+}
 
-        }
+.hero-content {
 
-        .hero h1 {
+    max-width: 750px;
 
-            font-size: 58px;
+}
 
-            margin-bottom: 20px;
+.hero h1 {
 
-        }
+    font-size: 60px;
 
-        .hero p {
+    margin-bottom: 20px;
 
-            font-size: 20px;
+}
 
-            margin-bottom: 35px;
+.hero p {
 
-        }
+    font-size: 20px;
 
-        .button {
+    margin-bottom: 35px;
 
-            display: inline-block;
+}
 
-            background: white;
+.button {
 
-            color: #222;
+    display: inline-block;
 
-            padding: 15px 28px;
+    background: #222;
 
-            border-radius: 6px;
+    color: white;
 
-            text-decoration: none;
+    padding: 15px 28px;
 
-            font-weight: bold;
+    border-radius: 6px;
 
-            transition: 0.2s;
+    text-decoration: none;
 
-        }
+    font-weight: bold;
 
-        .button:hover {
+    transition: .2s;
 
-            transform: translateY(-3px);
+}
 
-        }
+.button:hover {
 
-        section {
+    transform: translateY(-3px);
 
-            padding: 80px 8%;
+    background: #444;
 
-            max-width: 1200px;
+}
 
-            margin: auto;
+.hero .button {
 
-        }
+    background: white;
 
-        section h2 {
+    color: #222;
 
-            text-align: center;
+}
 
-            font-size: 36px;
+section {
 
-            margin-bottom: 50px;
+    padding: 80px 8%;
 
-        }
+    max-width: 1200px;
 
-        .services {
+    margin: auto;
 
-            display: grid;
+}
 
-            grid-template-columns: repeat(3, 1fr);
+section h2 {
 
-            gap: 25px;
+    text-align: center;
 
-        }
+    font-size: 36px;
 
-        .card {
+    margin-bottom: 45px;
 
-            background: white;
+}
 
-            padding: 35px;
+.services {
 
-            text-align: center;
+    display: grid;
 
-            border-radius: 10px;
+    grid-template-columns: repeat(3, 1fr);
 
-            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    gap: 25px;
 
-            transition: 0.2s;
+}
 
-        }
+.card {
 
-        .card:hover {
+    background: white;
 
-            transform: translateY(-5px);
+    padding: 35px 25px;
 
-        }
+    text-align: center;
 
-        .card h3 {
+    border-radius: 10px;
 
-            font-size: 22px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.06);
 
-            margin-bottom: 12px;
+    transition: .2s;
 
-        }
+}
 
-        .card p {
+.card:hover {
 
-            color: #666;
+    transform: translateY(-5px);
 
-        }
+}
 
-        .price {
+.card h3 {
 
-            font-size: 25px;
+    font-size: 22px;
 
-            font-weight: bold;
+    margin-bottom: 12px;
 
-            margin-top: 20px;
+}
 
-        }
+.card p {
 
-        .about {
+    color: #666;
 
-            background: white;
+}
 
-            max-width: none;
+.price {
 
-            text-align: center;
+    font-size: 25px;
 
-        }
+    font-weight: bold;
 
-        .about-content {
+    margin-top: 18px;
 
-            max-width: 750px;
+}
 
-            margin: auto;
+.about {
 
-            color: #555;
+    max-width: none;
 
-            font-size: 18px;
+    background: white;
 
-        }
+    text-align: center;
 
-        .reviews {
+}
 
-            display: grid;
+.about-text {
 
-            grid-template-columns: repeat(3, 1fr);
+    max-width: 750px;
 
-            gap: 25px;
+    margin: auto;
 
-        }
+    color: #555;
 
-        .review {
+    font-size: 18px;
 
-            background: white;
+}
 
-            padding: 30px;
+.reviews {
 
-            border-radius: 10px;
+    display: grid;
 
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    grid-template-columns: repeat(3, 1fr);
 
-        }
+    gap: 25px;
 
-        .stars {
+}
 
-            margin-bottom: 15px;
+.review {
 
-        }
+    background: white;
 
-        .review p {
+    padding: 30px;
 
-            color: #555;
+    border-radius: 10px;
 
-            margin-bottom: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.05);
 
-        }
+}
 
-        .contact {
+.stars {
 
-            text-align: center;
+    margin-bottom: 15px;
 
-        }
+}
 
-        .contact-info {
+.review p {
 
-            margin-bottom: 30px;
+    color: #555;
 
-            line-height: 2;
+    margin-bottom: 15px;
 
-        }
+}
 
-        footer {
+.contact {
 
-            background: #222;
+    text-align: center;
 
-            color: white;
+}
 
-            text-align: center;
+.contact-info {
 
-            padding: 30px;
+    margin-bottom: 30px;
 
-        }
+    line-height: 2;
 
-        @media (max-width: 800px) {
+}
 
-            header {
+footer {
 
-                flex-direction: column;
+    background: #222;
 
-                gap: 15px;
+    color: white;
 
-            }
+    text-align: center;
 
-            nav a {
+    padding: 30px;
 
-                margin: 0 8px;
+}
 
-            }
+@media (max-width: 800px) {
 
-            .hero {
+    header {
 
-                min-height: 550px;
+        flex-direction: column;
 
-            }
+        gap: 15px;
 
-            .hero h1 {
+    }
 
-                font-size: 40px;
+    nav a {
 
-            }
+        margin: 0 7px;
 
-            .services,
+        font-size: 14px;
 
-            .reviews {
+    }
 
-                grid-template-columns: 1fr;
+    .hero {
 
-            }
+        min-height: 550px;
 
-            section {
+    }
 
-                padding: 60px 6%;
+    .hero h1 {
 
-            }
+        font-size: 40px;
 
-        }
+    }
 
-    </style>
+    .services,
+
+    .reviews {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    section {
+
+        padding: 60px 6%;
+
+    }
+
+}
+
+</style>
 
 </head>
 
@@ -372,235 +388,239 @@
 
 <header>
 
-    <div class="logo">
+<div class="logo">
 
-        L'Atelier Barber
+L'Atelier Barber
 
-    </div>
+</div>
 
-    <nav>
+<nav>
 
-        <a href="#services">Services</a>
+<a href="#services">Services</a>
 
-        <a href="#about">À propos</a>
+<a href="#about">À propos</a>
 
-        <a href="#avis">Avis</a>
+<a href="#avis">Avis</a>
 
-        <a href="#contact">Contact</a>
+<a href="#contact">Contact</a>
 
-    </nav>
+</nav>
 
 </header>
 
 <section class="hero">
 
-    <div class="hero-content">
+<div class="hero-content">
 
-        <h1>
+<h1>
 
-            Votre style.<br>
+Votre style.<br>
 
-            Notre savoir-faire.
+Notre savoir-faire.
 
-        </h1>
+</h1>
 
-        <p>
+<p>
 
-            Barbier professionnel à Paris.
+Barbier professionnel à Paris.
 
-            Des coupes simples, précises et adaptées à votre style.
+Des coupes précises dans une ambiance simple et élégante.
 
-        </p>
+</p>
 
-        <a href="#contact" class="button">
+<a href="#contact" class="button">
 
-            Prendre rendez-vous
+Prendre rendez-vous
 
-        </a>
+</a>
 
-    </div>
+</div>
 
 </section>
 
 <section id="services">
 
-    <h2>Nos services</h2>
+<h2>Nos prestations</h2>
 
-    <div class="services">
+<div class="services">
 
-        <div class="card">
+<div class="card">
 
-            <h3>Coupe</h3>
+<h3>Coupe homme</h3>
 
-            <p>
+<p>
 
-                Coupe homme adaptée à votre style.
+Coupe adaptée à votre style et à vos envies.
 
-            </p>
+</p>
 
-            <div class="price">
+<div class="price">
 
-                20 €
+20 €
 
-            </div>
+</div>
 
-        </div>
+</div>
 
-        <div class="card">
+<div class="card">
 
-            <h3>Barbe</h3>
+<h3>Taille de barbe</h3>
 
-            <p>
+<p>
 
-                Taille et entretien de la barbe.
+Entretien et finition de votre barbe.
 
-            </p>
+</p>
 
-            <div class="price">
+<div class="price">
 
-                15 €
+15 €
 
-            </div>
+</div>
 
-        </div>
+</div>
 
-        <div class="card">
+<div class="card">
 
-            <h3>Coupe + Barbe</h3>
+<h3>Coupe + barbe</h3>
 
-            <p>
+<p>
 
-                La formule complète pour un style impeccable.
+La formule complète pour un look impeccable.
 
-            </p>
+</p>
 
-            <div class="price">
+<div class="price">
 
-                30 €
+30 €
 
-            </div>
+</div>
 
-        </div>
+</div>
 
-    </div>
+</div>
 
 </section>
 
 <section class="about" id="about">
 
-    <h2>À propos</h2>
+<h2>À propos</h2>
 
-    <div class="about-content">
+<div class="about-text">
 
-        <p>
+<p>
 
-            Bienvenue à L'Atelier Barber.
+Bienvenue à L'Atelier Barber.
 
-            Notre objectif est simple : vous offrir une expérience
+Nous vous accueillons dans une ambiance
 
-            professionnelle dans une ambiance agréable et conviviale.
+professionnelle et conviviale pour prendre soin
 
-        </p>
+de votre style avec précision.
 
-    </div>
+</p>
+
+</div>
 
 </section>
 
 <section id="avis">
 
-    <h2>Nos clients parlent de nous</h2>
+<h2>Les avis de nos clients</h2>
 
-    <div class="reviews">
+<div class="reviews">
 
-        <div class="review">
+<div class="review">
 
-            <div class="stars">
+<div class="stars">
 
-                ⭐⭐⭐⭐⭐
+⭐⭐⭐⭐⭐
 
-            </div>
+</div>
 
-            <p>
+<p>
 
-                "Très bonne expérience. Coupe propre et très professionnel."
+"Très bonne expérience. Coupe propre et service professionnel."
 
-            </p>
+</p>
 
-            <strong>— Thomas</strong>
+<strong>— Thomas</strong>
 
-        </div>
+</div>
 
-        <div class="review">
+<div class="review">
 
-            <div class="stars">
+<div class="stars">
 
-                ⭐⭐⭐⭐⭐
+⭐⭐⭐⭐⭐
 
-            </div>
+</div>
 
-            <p>
+<p>
 
-                "Super accueil et très bonne coupe. Je recommande."
+"Super accueil et très bonne coupe. Je recommande."
 
-            </p>
+</p>
 
-            <strong>— Karim</strong>
+<strong>— Karim</strong>
 
-        </div>
+</div>
 
-        <div class="review">
+<div class="review">
 
-            <div class="stars">
+<div class="stars">
 
-                ⭐⭐⭐⭐⭐
+⭐⭐⭐⭐⭐
 
-            </div>
+</div>
 
-            <p>
+<p>
 
-                "Enfin un barbier qui prend le temps de bien faire."
+"Très professionnel et résultat impeccable."
 
-            </p>
+</p>
 
-            <strong>— Lucas</strong>
+<strong>— Lucas</strong>
 
-        </div>
+</div>
 
-    </div>
+</div>
 
 </section>
 
 <section class="contact" id="contact">
 
-    <h2>Contact</h2>
+<h2>Prendre rendez-vous</h2>
 
-    <div class="contact-info">
+<div class="contact-info">
 
-        <p>📍 12 rue de Paris, 75000 Paris</p>
+<p>📍 12 rue de Paris, 75000 Paris</p>
 
-        <p>📞 06 12 34 56 78</p>
+<p>📞 06 12 34 56 78</p>
 
-        <p>🕐 Lundi - Samedi : 9h00 - 19h00</p>
+<p>🕐 Lundi - Samedi : 9h00 - 19h00</p>
 
-    </div>
+</div>
 
-    <a
+<a
 
-        class="button"
+class="button"
 
-        href="tel:0612345678"
+href="tel:0612345678">
 
-    >
+📞 Appeler maintenant
 
-        📞 Prendre rendez-vous
-
-    </a>
+</a>
 
 </section>
 
 <footer>
 
-    © 2026 L'Atelier Barber — Tous droits réservés
+<p>
+
+© 2026 L'Atelier Barber — Tous droits réservés
+
+</p>
 
 </footer>
 
